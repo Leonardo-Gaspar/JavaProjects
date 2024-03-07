@@ -1,0 +1,39 @@
+//TODO 08:
+
+No construtor da classe Cliente, criar as seguintes regras:
+	- Se o nome recebido for nulo ou vazio, lançar a exceção IllegalArgumentException com a mensagem "Nome inválido".
+	- Se o cpf recebido for nulo ou vazio, lançar a exceção IllegalArgumentException com a mensagem "CPF inválido".
+	- Se o email recebido for nulo ou vazio, lançar a exceção IllegalArgumentException com a mensagem "Email inválido".
+	
+	
+//TODO 09:
+
+Na classe Pedido:
+Criar um atributo estático int ID_ATUAL para controlar o id do cliente. Inicializar o ID para 0.
+
+Criar um construtor recebendo como argumento o cliente. Se o cliente for nulo, lançar a exceção IllegalArgumentException com a mensagem "Cliente inválido".
+
+	Se o cliente for válido, atribuí-lo ao atributo.
+	Ainda no construtor, inicializar o atributo dataPedido para a data atual. (LocalDateTime.now()).
+	Ainda no construtor, incrementar o atributo estático ID_ATUAL em 1, e passar o valor para o campo id.
+	
+
+//TODO 10:
+
+No mesmo pacote da classe Cliente, criar a exceção FormaDePagamentoNaoInformadaException, filha de Exception.
+Criar um construtor para a exceção criada que recebe uma mensagem. Repassar essa mensagem para o construtor da classe mãe.
+
+//T0DO 11:
+
+Criar um enum FormaPagamento, com as opções CARTAO_CREDITO, CARTAO_DEBITO, DINHEIRO e ONLINE.
+
+//TODO 12:
+
+Criar um atributo "formaPagamento" na classe Pedido do tipo FormaPagamento, bem como seu getter e setter.
+Criar um atributo booleano "finalizado" na classe Pedido, e seu getter (sem setter).
+
+//TODO 13:
+
+Criar um método sem retorno "finalizar" na classe pedido. Este método deve verificar se o atributo "formaPagamento" é nulo. 
+Em caso positivo, lançar a exceção FormaDePagamentoNaoInformadaException, com a mensagem "Forma de pagamento não informada".
+Em caso negativo, o método deve atualizar a o atributo "finalizado" para true.

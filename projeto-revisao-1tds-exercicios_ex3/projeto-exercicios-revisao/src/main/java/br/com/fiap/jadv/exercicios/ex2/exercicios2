@@ -1,0 +1,23 @@
+//TODO 03: Crie o pacote br.com.fiap.jadv.exercicios.pedidos
+
+//TODO 04: Crie a classe Cliente com os atributos abaixo, bem como getters e setters
+
+nome - String
+email - String
+cpf - String
+
+Crie o construtor da classe Cliente recebendo os tres atributos
+
+//TODO 05: Crie a classe Pedido com os atributos, bem como seus getters e setters:
+
+id - inteiro
+cliente - Cliente
+data - LocalDateTime
+
+//TODO 06: Crie o enum NivelClienteVIP, com os tipos:
+	MUITO_IMPORTANTE,
+	SUPER_IMPORTANTE
+	
+//TODO 07: Crie a classe ClienteVIP, filha da classe cliente, com o atributo
+
+nivel - tipo NivelClienteVIP, bem como seu getter e setter
